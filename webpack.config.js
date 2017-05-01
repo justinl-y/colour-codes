@@ -96,6 +96,7 @@ const config = {
 
 if (process.env.NODE_ENV === 'production') {
   config.devtool = ''; // No sourcemap for production
+  config.output.publicPath = './';
 
   // Add more configuration for production here like
   // SASS & CSS loaders
