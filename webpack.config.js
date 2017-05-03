@@ -1,5 +1,6 @@
 // const webpack = require('webpack');
 const path = require('path');
+const AutoprefixerPlugin = require('autoprefixer');
 
 const styleLoaders = [
   {
@@ -12,7 +13,7 @@ const styleLoaders = [
     loader: 'postcss-loader',
     options: {
       plugins: () => [
-        require('autoprefixer')({ browsers: 'last 2 versions' }),
+        AutoprefixerPlugin({ browsers: 'last 2 versions' }),
       ],
     },
   },

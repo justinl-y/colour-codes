@@ -1,3 +1,5 @@
+@import url('../../styles/base-styles.css');
+
 .container {
     display: flex;
     flex-direction: column;
